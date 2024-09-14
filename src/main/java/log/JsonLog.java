@@ -49,7 +49,7 @@ public class JsonLog {
         String dataHora = LocalDateTime.now().format(DATE_FORMATTER);
         return String.format(
             "{ \"dataHora\": \"%s\", \"operacao\": \"%s\", \"nome\": \"%s\", \"usuario\": \"%s\" }",
-            dataHora, operacao, nome, usuario
+            operacao, nome, dataHora, usuario
         );
     }
 

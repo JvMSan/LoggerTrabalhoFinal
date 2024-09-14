@@ -30,7 +30,7 @@ public class CsvLog {
     private String criarLogEntry(String operacao, String nome, String usuario) {
         String dataHora = LocalDateTime.now().format(DATE_FORMATTER);
         return String.format("\"%s\"; \"%s\"; \"%s\"; \"%s\"",
-            dataHora, operacao, nome, usuario
+            operacao, nome, dataHora,  usuario
         );
     }
 
