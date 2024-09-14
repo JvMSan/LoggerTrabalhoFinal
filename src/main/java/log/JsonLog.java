@@ -48,7 +48,7 @@ public class JsonLog {
     private String criarLogEntry(String operacao, String nome, String usuario) {
         String dataHora = LocalDateTime.now().format(DATE_FORMATTER);
         return String.format(
-            "{ \"dataHora\": \"%s\", \"operacao\": \"%s\", \"nome\": \"%s\", \"usuario\": \"%s\" }",
+            "{ \"operacao\": \"%s\", \"nome\": \"%s\", \"dataHora\": \"%s\", \"usuario\": \"%s\" }",
             operacao, nome, dataHora, usuario
         );
     }
